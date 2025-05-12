@@ -27,6 +27,9 @@ const Laboratorio = sequelize.define('Laboratorio', {
         type: DataTypes.STRING,
         allowNull: false
     }
+}, {
+    tableName: 'laboratorios', // <-- Agregado para coincidencia exacta
+    timestamps: true
 });
 
 module.exports = Laboratorio;
