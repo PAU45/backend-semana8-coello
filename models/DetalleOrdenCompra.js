@@ -6,7 +6,7 @@ const DetalleOrdenCompra = sequelize.define('DetalleOrdenCompra', {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: 'OrdenCompra',
+      model: 'ordencompra',
       key: 'NroOrdenC',
     },
   },
