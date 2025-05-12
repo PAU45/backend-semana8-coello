@@ -43,7 +43,7 @@ const Medicamento = sequelize.define('Medicamento', {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'TipoMedico',
+            model: 'TipoMedicos',
             key: 'id'
         }
     },
