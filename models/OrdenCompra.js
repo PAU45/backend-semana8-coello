@@ -23,7 +23,7 @@ const OrdenCompra = sequelize.define('OrdenCompra', {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: 'laboratorios',
+      model: 'laboratorios', // minúscula y plural, igual que en el modelo Laboratorio
       key: 'CodLab',
     },
   },
@@ -32,7 +32,7 @@ const OrdenCompra = sequelize.define('OrdenCompra', {
     allowNull: true,
   },
 }, {
-  tableName: 'OrdenCompra',
+  tableName: 'ordencompra', // <-- minúscula y singular/plural, igual que en la BD
   timestamps: true,
 });
 
